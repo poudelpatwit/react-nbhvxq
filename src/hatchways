@@ -1,0 +1,24 @@
+import React from "react";
+
+function hatchways() {
+
+const getPosts = async(e) => {
+ const axios = require('axios').default;
+        axios.get('https://api.hatchways.io/assessment/blog/posts')
+         )
+            .then(resp => {
+                console.log(resp.data);
+            })
+            .catch(err => {
+                // Handle Error Here
+                console.error(err);
+            });
+}
+}
+}
+return (
+<div>
+<button> Get Posts </button>
+</div>
+)
+export default hatchways;
